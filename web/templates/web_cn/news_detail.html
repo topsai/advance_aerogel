@@ -1,0 +1,35 @@
+{% extends "web_cn/base.html" %}
+{% load static %}
+{% block content %}
+<style>
+img{
+ max-width: 100%;
+}
+</style>
+
+    <div class="typo">
+        <div class="container">
+            <div class="row">
+                {% for blog in data %}
+                    <div class="col-sm-12 col-md-10 col-md-offset-1 services-grid">
+                        <h2 class="title">{{ blog.title }}</h2>
+                        <br/>
+                        {#                        <div style="width: 100%">#}
+                        {#                            <img style="max-width: 427px; width: 100%" src="/media/{{ blog.imgpic_640x427 }}" alt=" ">#}
+                        {#                        </div>#}
+                        <div style="text-align: left" align="center">
+                            <br/>
+                            <p>
+                                {% autoescape off %}
+                                    {{ blog.content }}
+                                {% endautoescape %}
+                            </p>
+                        </div>
+                        {#                        <div class="clearfix"></div>#}
+                    </div>
+                {% endfor %}
+                {#                <div class="clearfix"></div>#}
+            </div>
+        </div>
+    </div>
+{% endblock content %}

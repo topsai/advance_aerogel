@@ -1,0 +1,302 @@
+{% extends "web/base.html" %}
+{% load static %}
+{#{% block banner %}#}
+{#    <div class="logo">#}
+{#        <h1><a href="index.html">Automotive <span>-</span> X</a></h1>#}
+{#    </div>#}
+{#{% endblock banner %}#}
+{% block content %}
+    <style>
+        td {
+            width: 1px;
+        {#white-space: nowrap; /* 自适应宽度*/#} word-wrap: break-word;
+            word-break: break-all;
+        {#word-break: keep-all; /* 避免长单词截断，保持全部 */#}
+        }
+
+        th {
+            width: 1px;
+        {#white-space: nowrap; /* 自适应宽度*/#} word-wrap: break-word;
+            word-break: break-all;
+        {#word-break: keep-all; /* 避免长单词截断，保持全部 */#}
+        }
+
+        table {
+            table-layout: fixed;
+        }
+    </style>
+    <div class="ser-first wthree-11">
+        <div class="container">
+            <div class="services-info">
+                <h2 class="title">OUR TECHNOLOGY</h2>
+            </div>
+            <div>
+
+                HONG HITECH developed a totally new technology to manufacture aerogel material. Traditionally aerogel is
+                made from silica gel through a process called supercritical where silica gel with solvent go through
+                high pressure and high temperature to evaporate the solvent and keep the structure of the gel not to
+                collapse. Currently most of the silica aerogel are made through this process, which is more expensive
+                and slow.
+                <div align="center">
+                    <br/><br/>
+
+                    <img src="/static/web/images/yanfa1.jpg" class="img-responsive">
+                    <br/><br/>
+
+                </div>
+                Our Hong technology is totally different. We use a worldwide patented technology called phased
+                decompression to manufacture silica aerogel. Instead of high pressure and high temperature, we developed
+                our unique IP technology called phased decompression. We go the opposite of high temperature and high
+                pressure by lowering the pressure through phases to draw the solvent out and maintain the structure not
+                to collapse at the same time. This technology is patented in US, Europe, Japan and China.
+                <div align="center">
+                    <br/><br/>
+
+                    <img src="/static/web/images/yanfa2.jpg" class="img-responsive">
+                    <br/><br/>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="services-top agile-11">
+        <div class="container">
+            <div class="services-info">
+                <h3 class="tittle">We Can Help You</h3>
+            </div>
+            <div class="ser-top-grids">
+                <div class="col-md-8 col-md-offset-2 ser-top-grid">
+                    <div class="ser-top-img">
+                        <img src="{% static 'web/images/13.jpg' %}" alt=" ">
+                    </div>
+                    <div class="ser-top-txt">
+
+                        <p>
+                            We can produce
+                            high quality aerogel fast and economically. Our aerogel is very high quality with light
+                            weight, and big
+                            surface to weight.
+                        </p>
+                        <p>At the meantime our cost is low and can transfer the saving to our
+                            customers.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                {#                <div class="col-md-4 ser-top-grid-1">#}
+                {#                    <ul>#}
+                {#                        <li><a href="#">Sed ut perspiciatis unde om</a></li>#}
+                {#                        <li><a href="#">At vero eos et accusamus et</a></li>#}
+                {#                        <li><a href="#">On the other hand, we deno</a></li>#}
+                {#                        <li><a href="#">Sed ut perspiciatis unde </a></li>#}
+                {#                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>#}
+                {#                        <li><a href="#">Neque porro quisquam est </a></li>#}
+                {#                    </ul>#}
+                {#                </div>#}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="services w3agile-11">
+        <div class="container">
+            <div class="row col-sm-12">
+                <div class="services-info">
+                    <h3 class="tittle">OUR PRODUCTS</h3>
+                </div>
+
+                <div>
+                    <a name="a1"></a>
+                    <h3>1. Aerogel</h3><br/>
+                    Our aerogel powder is of 5-10 nm in size, with thermal conductivity of 0.013 W/(m·K). This can be
+                    used as raw material to make all other aerogel products.<br/>
+                    <div align="center">
+                        <br/><br/>
+                        <img src="/static/web/images/fenmo.jpg" class="img-responsive">
+                        <br/><br/>
+                    </div>
+                    Specifications: AEROGEL<br/>
+                    <div class="bs-docs-example">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                {#                                <th></th>#}
+                                <th>HYDRO FEATURE</th>
+                                <th>MODEL</th>
+                                <th>MOLECULE SIZE （UM）</th>
+                                <th>GRAVITY（kg/m3）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                {#                                <td rowspan="8">AEROGEL</td>#}
+                                <td rowspan="4">HYDROPHILIC</td>
+                                <td>HD-QNJQS-40-01</td>
+                                <td>5-15</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJQS-40-02</td>
+                                <td>15-30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJQS-70-01</td>
+                                <td>5-15</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJQS-70-02</td>
+                                <td>15-30</td>
+                                <td>70</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="4">HYDROPHOBIC</td>
+                                <td>HD-QNJSS-40-01</td>
+                                <td>5-15</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJSS-40-02</td>
+                                <td>15-30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJSS-70-01</td>
+                                <td>5-15</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJSS-70-02</td>
+                                <td>15-30</td>
+                                <td>70</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/><br/>
+
+                    <div class="bs-docs-example">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>SPECIFICATIONS</th>
+                                <th>Test results</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>THERMAL CONDUCTIVITY，W/(m·K)</td>
+                                <td>0.013</td>
+                            </tr>
+                            <tr>
+                                <td> POROSITY，%</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>DENSITY，kg/m3</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>HYDRO REPELLING，%</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>SURFACE TO WEIGHT RATIO，m2/g</td>
+                                <td>960</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+                <br/><br/>
+                <div>
+                    <a name="a2"></a>
+                    <h3>2. Aerogel insulating blanket:</h3><br/>
+
+                    Aerogel blanket are fiber mesh sheets coated with aerogel liquid. It has the best thermal insulation
+                    property and makes the ideal insulation wrapping for oil industry, the cryo industry (such as LNG
+                    shipping, piping), the power industry, the building industry etc.<br/><br/>
+                    <div align="center">
+                        <br/><br/>
+                        <img src="/static/web/images/baowenzhan.png" class="img-responsive">
+                        <br/><br/>
+                    </div>
+                    Hong Hitech has developed another patented technology to separate our aerogel sheet from others.
+                    Traditionally, the coating of the aerogel onto fiber mesh is done by submerge the fabric into the
+                    coating liquid, then take out and heated to dry. The product made by this process has some major
+                    quality
+                    issue. As the blanket bend or with the rain and shine, the coating will peel out, then of course the
+                    thermal protection will decrease. You may need to add or replace the defect blanket.<br/><br/>
+
+                    Our technology using high vacuum pressure to suck the aerogel into the fiber sheet and mixed with
+                    the
+                    fiber. This made our product so much different from others as they almost will not peeling off and
+                    resist to whether beaten, so eliminate the chance to add or replace blanket cost. The customers
+                    could
+                    enjoy longer thermal insulating time and cost saving.<br/><br/>
+
+                    HONG HITECH THERMAL BLANKET<br/><br/>
+
+                    PRODUCTS SPECIFICATIONS:<br/><br/><br/>
+
+
+                    <div class="bs-docs-example">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>AEROGEL THERMAL BLANKET</th>
+                                <th>SIZES (UNIT mm）</th>
+                                <th>SPECIFICATIONS</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>THERMAL BLANKET</td>
+                                <td>35000 X 1500 X 10 in rolls. Length made to order</td>
+                                <td>Weight: 1800±200g/㎡ <br/>
+                                    Heat conductivity: 0.023W/(m·K)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>THERMAL BLANKET</td>
+                                <td>55000 × 1500 × 6 in rolls. Length made to order</td>
+                                <td>Weight 1080±120g/㎡ <br/>Heat conductivity: 0.023W/(m·mmK)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>THERMAL BLANKET</td>
+                                <td>75000×1500×3
+                                    in rolls. Length made to order
+                                </td>
+                                <td>Weight: 480±65g/㎡<br/>
+                                    Heat conductivity: 0.023W/(m·K)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>THERMAL BOARD</td>
+                                <td>750×600×20
+                                    Length & width made to order
+                                </td>
+                                <td>Heat conductivity 0.032W/(m·K)</td>
+                            </tr>
+
+                            <tr>
+                                <td>THERMAL BOARD</td>
+                                <td>1500×100×20
+                                    Length & width made to order
+
+                                </td>
+                                <td>Heat conductivity 0.032W/(m·K)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock content %}

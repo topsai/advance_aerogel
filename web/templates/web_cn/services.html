@@ -1,0 +1,289 @@
+{% extends "web_cn/base.html" %}
+{% load static %}
+{#{% block banner %}#}
+{#    <div class="logo">#}
+{#        <h1><a href="index.html">Automotive <span>-</span> X</a></h1>#}
+{#    </div>#}
+{#{% endblock banner %}#}
+{% block content %}
+    <style>
+        td {
+            width: 1px;
+        {#white-space: nowrap; /* 自适应宽度*/#} word-wrap: break-word;
+            word-break: break-all;
+        {#word-break: keep-all; /* 避免长单词截断，保持全部 */#}
+        }
+
+        th {
+            width: 1px;
+        {#white-space: nowrap; /* 自适应宽度*/#} word-wrap: break-word;
+            word-break: break-all;
+        {#word-break: keep-all; /* 避免长单词截断，保持全部 */#}
+        }
+
+        table {
+            table-layout: fixed;
+        }
+    </style>
+    <div class="ser-first wthree-11">
+        <div class="container">
+            <div class="services-info">
+                <h2 class="title">我们的技术</h2>
+            </div>
+
+            <div>
+                北京弘大科技股份有限公司开发了一种全新的技术来制造气凝胶材料。传统上，气凝胶是由硅胶通过超临界的过程制成的，其中带有
+                溶剂的硅胶会经受高压和高温的作用，从而蒸发掉溶剂并保持凝胶的结构不塌陷。当前，大多数二氧化硅气凝胶是通过该过程制成的，
+                昂贵且缓慢。<br/><br/>
+                <div align="center">
+                    <br/><br/>
+
+                    <img src="/static/web/images/yanfa1.jpg" class="img-responsive">
+                    <br/><br/>
+
+                </div>
+                我们的专利技术完全不同。我们使用一种称为分阶段减压的全球专利技术来制造二氧化硅气凝胶。代替高压和高温，我们通过阶段性
+                的减压以抽出溶剂并保持结构不会同时塌陷。该技术已在美国，欧洲，日本和中国获得专利。我们的技术可以快速，经济地生产高品
+                质的气凝胶。我们的气凝胶质量高，重量轻，高比表面积，同时，我们的成本低，可以将节省的资金转移给我们的客户。
+                <div align="center">
+                    <br/><br/>
+
+                    <img src="/static/web/images/yanfa2.jpg" class="img-responsive">
+                    <br/><br/>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="services-top agile-11">
+        <div class="container">
+            <div class="services-info">
+                <h3 class="tittle">We Can Help You</h3>
+            </div>
+            <div class="ser-top-grids">
+                <div class="col-md-8 col-md-offset-2 ser-top-grid">
+                    <div class="ser-top-img">
+                        <img src="{% static 'web/images/13.jpg' %}" alt=" ">
+                    </div>
+                    <div class="ser-top-txt">
+
+                        <p>
+                            We can produce
+                            high quality aerogel fast and economically. Our aerogel is very high quality with light
+                            weight, and big
+                            surface to weight.
+                        </p>
+                        <p>At the meantime our cost is low and can transfer the saving to our
+                            customers.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                {#                <div class="col-md-4 ser-top-grid-1">#}
+                {#                    <ul>#}
+                {#                        <li><a href="#">Sed ut perspiciatis unde om</a></li>#}
+                {#                        <li><a href="#">At vero eos et accusamus et</a></li>#}
+                {#                        <li><a href="#">On the other hand, we deno</a></li>#}
+                {#                        <li><a href="#">Sed ut perspiciatis unde </a></li>#}
+                {#                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>#}
+                {#                        <li><a href="#">Neque porro quisquam est </a></li>#}
+                {#                    </ul>#}
+                {#                </div>#}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="services w3agile-11">
+        <div class="container">
+            <div class="row col-sm-12">
+                <div class="services-info">
+                    <h3 class="tittle">产品介绍</h3>
+                </div>
+
+                <div>
+                    <a name="a1" id="a1"></a>
+                    <h3>1. 气凝胶粉</h3><br/>
+                    我们的气凝胶粉末尺寸为5-10 nm，热导率为0.013 W /（m·K）。
+                    可用作制造所有其他气凝胶产品的原料。
+                    <div align="center">
+                        <br/><br/>
+                        <img src="/static/web/images/fenmo.jpg" class="img-responsive">
+                        <br/><br/>
+                    </div>
+                    <br/>
+                    规格：<br/>
+                    <div class="bs-docs-example">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                {#                                <th></th>#}
+                                <th>特征</th>
+                                <th>型号</th>
+                                <th>分子大小（UM）</th>
+                                <th>重量（kg/m3）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                {#                                <td rowspan="8">AEROGEL</td>#}
+                                <td rowspan="4">亲水</td>
+                                <td>HD-QNJQS-40-01</td>
+                                <td>5-15</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJQS-40-02</td>
+                                <td>15-30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJQS-70-01</td>
+                                <td>5-15</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJQS-70-02</td>
+                                <td>15-30</td>
+                                <td>70</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="4">疏水</td>
+                                <td>HD-QNJSS-40-01</td>
+                                <td>5-15</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJSS-40-02</td>
+                                <td>15-30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJSS-70-01</td>
+                                <td>5-15</td>
+                                <td>70</td>
+                            </tr>
+                            <tr>
+                                <td>HD-QNJSS-70-02</td>
+                                <td>15-30</td>
+                                <td>70</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/><br/>
+
+                    <div class="bs-docs-example">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>性能</th>
+                                <th>检测结果</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>导热系数，W/(m·K)</td>
+                                <td>0.013</td>
+                            </tr>
+                            <tr>
+                                <td>孔隙率，%</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>密度，kg/m3</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>疏水性，%</td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>表面重量比，m2/g</td>
+                                <td>960</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+                <br/><br/>
+                <div>
+                    <a name="a2"></a>
+                    <h3>2. 气凝胶保温毯:</h3><br/>
+
+                    气凝胶保温毯是涂有气凝胶的纤维网片。它具有最佳的隔热性能，是石油工业，低温工业（例如LNG运输，管道），电力工业，
+                    建筑工业等的理想隔热材料。<br/><br/>
+
+                    <div align="center">
+                        <br/><br/>
+                        <img src="/static/web/images/baowenzhan.png" class="img-responsive">
+                        <br/><br/>
+                    </div>
+
+                    北京弘大科技股份有限公司开发了另一项特有技术，使我们的气凝胶保温毯大大优于其他同类产品。传统上，将气凝胶涂覆到纤
+                    维网工艺是通过将织物浸入涂覆液中来完成的。然后取出并加热烘干。通过此过程制成的产品存在一些主要的质量问题：随着毯
+                    子弯曲或在雨和阳光作用下，涂层将剥落，导致热保护作用降低，从而需要添加或更换气凝胶保温毯。<br/><br/>
+
+                    我们的技术使用真空负压力将气凝胶吸入纤维片中并与纤维混合。这使我们的产品与其他产品有很大的不同，因为它们几乎不会
+                    剥落并且不容易老化。因此，不需频繁增加或更换产品，客户可以享受更长的保温时间并节省成本。<br/><br/>
+
+
+                    产品规格:<br/><br/><br/>
+
+
+                    <div class="bs-docs-example">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>气凝胶保温产品</th>
+                                <th>大小 (单位mm)</th>
+                                <th>特点</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>保温毯</td>
+                                <td>35000 X 1500 X 10 /卷。 长度可预订</td>
+                                <td>重量: 1800±200g/㎡ <br/>
+                                    导热系数: 0.023W/(m·K)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>THERMAL BLANKET</td>
+                                <td>55000 × 1500 × 6 /卷。 长度可预订</td>
+                                <td>重量: 1080±120g/㎡ <br/>导热系数: 0.023W/(m·mmK)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>THERMAL BLANKET</td>
+                                <td>75000×1500×3 /卷。 长度可预订
+                                </td>
+                                <td>重量: 480±65g/㎡<br/>
+                                    导热系数: 0.023W/(m·K)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>THERMAL BOARD</td>
+                                <td>750×600×20 长宽可预订
+                                </td>
+                                <td>导热系数: 0.032W/(m·K)</td>
+                            </tr>
+
+                            <tr>
+                                <td>THERMAL BOARD</td>
+                                <td>1500×100×20 长宽可预订
+
+                                </td>
+                                <td>导热系数: 0.032W/(m·K)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock content %}
