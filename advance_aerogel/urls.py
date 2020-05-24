@@ -24,5 +24,6 @@ urlpatterns = [
     path('cn/', include('web.urls_cn')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
     # media配置
-    re_path(r'media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})  # 主要以media开头，后面写什么都行
+    re_path(r'media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT})
+    # 主要以media开头，后面写什么都行
 ]
