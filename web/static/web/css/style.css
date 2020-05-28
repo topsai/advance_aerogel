@@ -116,7 +116,7 @@ body a:hover{
     background-color: transparent;
 }
 .nav > li > a {
-    padding: 10px 30px !important;
+    padding: 10px 42px !important;
     font-size: 1.1em;
     color: #fff! important;
 }
@@ -455,6 +455,11 @@ p.wt {
 .f-left{
 	width:33.3%;
 	float:left;
+	padding:2px;
+}
+.f-right{
+	width:33.3%;
+	float:right;
 	padding:2px;
 }
 .flickr{
@@ -1500,7 +1505,7 @@ ul.staff-social-icons {
     width: 100%;
 }
 .nav > li > a {
-    padding: 10px 28px !important;
+    padding: 10px 55px !important;
 }
 .logo h1 a {
     font-size: 1.7em;

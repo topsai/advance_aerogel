@@ -1,12 +1,98 @@
 {% extends "web_cn/base.html" %}
 {% load static %}
+{% block style %}
+    <style type="text/css">
+        .item, .carousel-caption {
+            width: 100%;
+            height: 250px;
+            background-color: #F7F7F7;
+        }
+
+        .carousel-caption {
+            left: 0;
+            top: 0;
+            padding: 0;
+        }
+
+        .carousel-control {
+            width: 5%;
+        }
+
+        .carousel-caption img {
+            {#max-width: 100%;#}
+            overflow-x: hidden;
+        }
+    </style>
+{% endblock %}
 {% block banner %}
 
     <h2 class="animated wow fadeInUp animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
-        欢迎来到 ADVANCE AEROGEL 的气凝胶世界
+        欢迎来到 ADVANCE AEROGEL 的气凝胶世界 <br/><br/>
     </h2>
+    <p class="animated wow fadeInUp animated animated" data-wow-duration="1200ms" data-wow-delay="500ms">
+        我们提供的气凝胶及产品生产工艺创新、技术指标先进、价格优惠、货源充足、取得了多国专利
+    </p>
 {% endblock banner %}
 
+{% block content %}
+
+    <div class="">
+        {#            <h3>新闻</h3>#}
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            {#            <ol class="carousel-indicators">#}
+            {#                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>#}
+            {#                <li data-target="#myCarousel" data-slide-to="1"></li>#}
+            {#                <li data-target="#myCarousel" data-slide-to="2"></li>#}
+            {#            </ol>#}
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-caption">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                    </div>
+                </div>
+                <div class="item" style="">
+                    <div class="carousel-caption">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                    </div>
+                </div>
+                <div class="item" style="">
+                    <div class="carousel-caption">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                        <img style="display: inline-block;" width="" height="250"
+                             src="/media/DF_goods/Image/2020/04/eefbd9bb699ab016bed4405de60e7438.jpg">
+                    </div>
+
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+{% endblock %}
 
 {#{% block content %}#}
 {#    <!-- w3l -->#}

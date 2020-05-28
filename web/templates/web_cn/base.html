@@ -32,6 +32,8 @@
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
           rel='stylesheet' type='text/css'>
+    {% block style %}
+    {% endblock style %}
 </head>
 <body>
 
@@ -45,7 +47,7 @@
 
 <div class="container">
     <div class="container">
-        <div class="col-lg-offset-10 col-lg-10"><a href="/">English</a></div>
+        <div class="col-offset-10"><a href="/">English</a></div>
     </div>
     <div class="head-top wow fadeInLeft animated" data-wow-delay=".5s">
         <div class="navigation">
@@ -69,7 +71,7 @@
                             <li><a href="/cn/about/" data-hover="关于">关于</a></li>
                             <li><a href="/cn/service/" data-hover="服务">服务</a></li>
                             <li><a href="/cn/news/" data-hover="新闻">新闻</a></li>
-                            <li><a href="/cn/gallery/" data-hover="照片">照片</a></li>
+{#                            <li><a href="/cn/gallery/" data-hover="照片">照片</a></li>#}
                             <li><a href="/cn/contact/" data-hover="联系">联系</a></li>
                         </ul>
                     </nav>
@@ -98,7 +100,7 @@
                 <h4>信息</h4>
                 <ul>
                     <li><a href="/cn/about/"><span>&gt; </span>关于</a></li>
-                    <li><a href="/cn/gallery/"><span>&gt; </span>照片</a></li>
+{#                    <li><a href="/cn/gallery/"><span>&gt; </span>照片</a></li>#}
                     <li><a href="/cn/service/"><span>&gt; </span>服务</a></li>
                     <li><a href="./cn/news/"><span>&gt; </span>新闻</a></li>
                     <li><a href="/cn/contact/"><span>&gt; </span>联系</a></li>
@@ -114,11 +116,11 @@
             <div class="col-md-6 ft-left wow fadeInRight animated" data-wow-delay=".5s">
                 <h4>通讯地址</h4>
                 <p>北京市海淀区昆明湖南路51号A座二层201号</p>
-{#                <form action="#" method="post">#}
-{#                    <input type="text" name="email" value="Enter Your Email" onfocus="this.value = '';"#}
-{#                           onblur="if (this.value == '') {this.value = 'Enter Your Email';}">#}
-{#                    <input type="submit" value="Subscribe">#}
-{#                </form>#}
+                {#                <form action="#" method="post">#}
+                {#                    <input type="text" name="email" value="Enter Your Email" onfocus="this.value = '';"#}
+                {#                           onblur="if (this.value == '') {this.value = 'Enter Your Email';}">#}
+                {#                    <input type="submit" value="Subscribe">#}
+                {#                </form>#}
             </div>
             <div class="clearfix"></div>
         </div>

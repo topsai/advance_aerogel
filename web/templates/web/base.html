@@ -32,6 +32,9 @@
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
           rel='stylesheet' type='text/css'>
+    {% block style %}
+
+    {% endblock %}
 </head>
 <body>
 
@@ -45,7 +48,7 @@
 
 <div class="container">
     <div class="container">
-        <div class="col-lg-offset-10 col-lg-10"><a href="/cn/">中文</a></div>
+        <div class="col-offset-10"><a href="/cn/">中文</a></div>
     </div>
     <div class="head-top wow fadeInLeft animated" data-wow-delay=".5s">
         <div class="navigation">
@@ -69,7 +72,7 @@
                             <li><a href="/about/" data-hover="About">About</a></li>
                             <li><a href="/service/" data-hover="Services">Services</a></li>
                             <li><a href="/news/" data-hover="News">News</a></li>
-                            <li><a href="/gallery/" data-hover="Gallery">Gallery</a></li>
+                            {#                            <li><a href="/gallery/" data-hover="Gallery">Gallery</a></li>#}
                             <li><a href="/contact/" data-hover="Contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -98,7 +101,7 @@
                 <h4>Information</h4>
                 <ul>
                     <li><a href="/about/"><span>&gt; </span>About</a></li>
-                    <li><a href="/gallery/"><span>&gt; </span>Gallery</a></li>
+                    {#                    <li><a href="/gallery/"><span>&gt; </span>Gallery</a></li>#}
                     <li><a href="/service/"><span>&gt; </span>Services</a></li>
                     <li><a href="/news/"><span>&gt; </span>News</a></li>
                     <li><a href="/contact/"><span>&gt; </span>Contact</a></li>
