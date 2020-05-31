@@ -35,8 +35,15 @@ def gallery(request):
     return render(request, 'web/gallery.html')
 
 
-#  cn
+def hongna(request):
+    return render(request, 'web/hongna.html')
 
+
+def hongda(request):
+    return render(request, 'web/hongda.html')
+
+
+#  cn
 def home_cn(request):
     return render(request, 'web_cn/index.html')
 
