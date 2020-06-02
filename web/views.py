@@ -39,13 +39,29 @@ def hongna(request):
     return render(request, 'web/hongna.html')
 
 
+def hongna_cn(request):
+    return render(request, 'web_cn/hongna.html')
+
+
 def hongda(request):
     return render(request, 'web/hongda.html')
+
+
+def hongda_cn(request):
+    return render(request, 'web_cn/hongda.html')
 
 
 #  cn
 def home_cn(request):
     return render(request, 'web_cn/index.html')
+
+
+def advance_aerogel_cn(request):
+    return render(request, 'web_cn/advance_aerogel.html')
+
+
+def advance_aerogel(request):
+    return render(request, 'web/advance_aerogel.html')
 
 
 def service_cn(request):

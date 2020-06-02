@@ -27,4 +27,5 @@ urlpatterns = [
     path('gallery/', views.gallery, name='gallery'),
     path('hongna/', views.hongna, name='hongna'),
     path('hongda/', views.hongda, name='hongda'),
+    path('advance_aerogel/', views.advance_aerogel, name='advance_aerogel'),
 ]
