@@ -27,5 +27,10 @@ urlpatterns = [
     path('gallery/', views.gallery, name='gallery'),
     path('hongna/', views.hongna, name='hongna'),
     path('hongda/', views.hongda, name='hongda'),
+    # 什么是气凝胶
     path('advance_aerogel/', views.advance_aerogel, name='advance_aerogel'),
+    # 我们生产的气凝胶
+    path('aerogels_we_provide/', views.aerogels_we_provide, name='aerogels_we_provide'),
+    # 气凝胶工业的发展
+    path('advance_aerogel_grow/', views.advance_aerogel_grow, name='advance_aerogel_grow'),
 ]

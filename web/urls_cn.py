@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
     path('', views.home_cn, name='home'),
     path('service/', views.service_cn, name='service'),
@@ -29,4 +28,7 @@ urlpatterns = [
     path('hongna/', views.hongna_cn, name='hongna'),
     path('hongda/', views.hongda_cn, name='hongda'),
     path('advance_aerogel/', views.advance_aerogel_cn, name='advance_aerogel'),
+    path('advance_aerogel_grow/', views.advance_aerogel_grow_cn, name='advance_aerogel_grow'),
+    # 我们生产的气凝胶
+    path('aerogels_we_provide/', views.aerogels_we_provide_cn, name='aerogels_we_provide_cn'),
 ]

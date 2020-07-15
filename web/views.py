@@ -60,8 +60,24 @@ def advance_aerogel_cn(request):
     return render(request, 'web_cn/advance_aerogel.html')
 
 
+def advance_aerogel_grow_cn(request):
+    return render(request, 'web_cn/advance_aerogel_grow.html')
+
+
 def advance_aerogel(request):
     return render(request, 'web/advance_aerogel.html')
+
+
+def aerogels_we_provide_cn(request):
+    return render(request, 'web_cn/aerogels_we_provide.html')
+
+
+def aerogels_we_provide(request):
+    return render(request, 'web/aerogels_we_provide.html')
+
+
+def advance_aerogel_grow(request):
+    return render(request, 'web/advance_aerogel_grow.html')
 
 
 def service_cn(request):
